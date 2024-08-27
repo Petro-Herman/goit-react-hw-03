@@ -1,3 +1,4 @@
+import Contact from "../Contact/Contact";
 import ContactForm from "../ContactForm/ContactForm";
 
 export default function App() {
@@ -5,6 +6,7 @@ export default function App() {
         <div>
         <h1>Phonebook</h1>
         <ContactForm/>
+        <Contact />
         </div>
     )
 }
