@@ -17,12 +17,12 @@ export default function App() {
     localStorage.setItem("contacts", JSON.stringify(contacts));
   }, [contacts]);
 
-  useEffect(() => {
-    const savedContacts = localStorage.getItem("contacts");
-    if (!savedContacts) {
-      localStorage.setItem("contacts", JSON.stringify(data));
-    }
-  }, []);
+  // useEffect(() => {
+  //   const savedContacts = localStorage.getItem("contacts");
+  //   if (!savedContacts) {
+  //     localStorage.setItem("contacts", JSON.stringify(data));
+  //   }
+  // }, []);
 
   const addContact = (newContact) => {
     const isDuplicate = contacts.some(
